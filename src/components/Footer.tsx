@@ -18,11 +18,11 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
           {/* Logo and Contact Info */}
           <div className="md:col-span-4">
-            <div className="flex items-center space-x-3 mb-6">
+            <div className="flex items-center space-x-3 mb-4 md:mb-6">
               <Image
                 src="/logo.png"
                 alt="Circularity Centre Denmark"
@@ -35,7 +35,7 @@ const Footer = () => {
               </span>
             </div>
 
-            <div className="space-y-2 text-sm">
+            <div className="space-y-1 md:space-y-2 text-sm">
               <div>
                 <span className="font-medium">Phone:</span> Lorem Ipsum
               </div>
@@ -53,8 +53,10 @@ const Footer = () => {
 
           {/* Newsletter Signup */}
           <div className="md:col-span-4">
-            <h3 className="text-lg font-semibold mb-4">Newsletter Signup</h3>
-            <form onSubmit={handleNewsletterSubmit} className="mb-4">
+            <h3 className="text-lg font-semibold mb-3 md:mb-4">
+              Newsletter Signup
+            </h3>
+            <form onSubmit={handleNewsletterSubmit} className="mb-3 md:mb-4">
               <div className="relative">
                 <input
                   type="email"
@@ -72,7 +74,7 @@ const Footer = () => {
                 </button>
               </div>
             </form>
-            <p className="text-xs text-white/80 mb-6">
+            <p className="text-xs text-white/80 mb-4 md:mb-6">
               By subscribing you accept to receive emails with news from
               Circularity Centre Denmark. You can opt out at any time. Read our
               Privacy Policy.
@@ -106,7 +108,7 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <div className="md:col-span-4">
-            <div className="flex flex-col space-y-3 text-right">
+            <div className="flex flex-col space-y-2 md:space-y-3 text-center md:text-right">
               <Link
                 href="/donate"
                 className="hover:text-white/80 transition-colors"
