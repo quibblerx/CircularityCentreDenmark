@@ -4,49 +4,18 @@ import { Search, BookOpen, Zap } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex items-center">
-              <span className="text-xl font-semibold text-gray-900">
-                homepage
-              </span>
-            </div>
-
-            {/* Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-500 hover:text-gray-900">
-                Circularity Centre Denmark
-              </a>
-            </nav>
-
-            {/* Circular Elements */}
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-                <span className="text-black font-bold">A</span>
-              </div>
-              <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">A</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Your gateway to circularity
             <br />
-            <span className="text-green-600">in Denmark</span>
+            <span className="text-primary">in Denmark</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Find partners, insights, and action opportunities tailored to you.
           </p>
-          <button className="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors">
+          <button className="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary-hover transition-colors">
             Join Circularity Centre Denmark
           </button>
         </div>
