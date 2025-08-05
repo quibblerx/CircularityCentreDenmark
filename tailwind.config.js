@@ -6,7 +6,15 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '32': '32px',
+      },
+      fontFamily: {
+        'manrope': ['var(--font-manrope)', 'sans-serif'],
+        'nunito-sans': ['var(--font-nunito-sans)', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

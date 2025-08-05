@@ -3,7 +3,7 @@ import FeatureCard from "@/components/FeatureCard";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -21,36 +21,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Feature Cards - Overlapping with green section */}
-      <section className="px-4 sm:px-6 lg:px-8 relative z-10 -mb-32">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            <FeatureCard
-              icon="discover"
-              title="Discover"
-              description="Discover circular businesses to partner with."
-            />
-            <FeatureCard
-              icon="learn"
-              title="Learn"
-              description={
-                <>
-                  Browse our <strong>Research Library</strong> for accessible
-                  learnings.
-                </>
-              }
-            />
-            <FeatureCard
-              icon="act"
-              title="Act"
-              description="Join or create workshops and projects that accelerate circularity."
-            />
+      {/* Services Section with Background - Desktop overlapping design */}
+      <div className="hidden lg:block">
+        <section className="relative w-full h-[382px]">
+          {/* Background */}
+          <div className="absolute w-full h-[400px] left-0 top-0 z-0">
+            <div className="flex flex-col justify-center items-center p-0 w-full h-[400px]">
+              {/* White Rectangle */}
+              <div className="w-full h-[205px] bg-white"></div>
+              {/* Green Rectangle */}
+              <div className="w-full h-[206px] bg-primary"></div>
+            </div>
           </div>
+
+          {/* Feature Cards - Overlapping with background */}
+          <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-[1440px] mx-auto">
+              <div className="flex flex-row justify-center items-center px-[120px] py-6 gap-6 w-full h-[375px]">
+                <FeatureCard
+                  icon="discover"
+                  title="Discover"
+                  description="Discover circular businesses to partner with."
+                />
+                <FeatureCard
+                  icon="learn"
+                  title="Learn"
+                  description={
+                    <>Browse our Research Library for accessible learnings.</>
+                  }
+                />
+                <FeatureCard
+                  icon="act"
+                  title="Act"
+                  description="Join or create workshops and projects that accelerate circularity."
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Mobile/Tablet Cards Section */}
+      <section className="lg:hidden bg-gray-50 py-12 px-4">
+        <div className="max-w-sm mx-auto space-y-8">
+          <FeatureCard
+            icon="discover"
+            title="Discover"
+            description="Discover circular businesses to partner with."
+          />
+          <FeatureCard
+            icon="learn"
+            title="Learn"
+            description={
+              <>Browse our Research Library for accessible learnings.</>
+            }
+          />
+          <FeatureCard
+            icon="act"
+            title="Act"
+            description="Join or create workshops and projects that accelerate circularity."
+          />
         </div>
       </section>
 
-      {/* Circular Business Section - Overlapped by cards */}
-      <section className="bg-primary py-20 px-4 sm:px-6 lg:px-8 pt-48">
+      {/* Circular Business Section */}
+      <section className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-normal text-white mb-4">
             Everything you need to create a circular
