@@ -1,12 +1,14 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface FeatureCardProps {
   icon: "discover" | "learn" | "act";
   title: string;
   description: React.ReactNode;
   onClick?: () => void;
+  href?: string;
 }
 
 const iconPaths = {
@@ -20,10 +22,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   description,
   onClick,
+  href,
 }) => {
   const iconSrc = iconPaths[icon];
 
-  return (
+  const cardContent = (
     <div
       className="bg-white border border-gray-100 flex flex-col justify-center items-center p-6 lg:p-8 gap-2 w-full max-w-[344px] lg:w-[344px] h-auto lg:h-[314px] min-h-[280px] lg:min-h-[314px] rounded-[32px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] hover:shadow-xl transition-shadow duration-200 mx-auto"
       style={{ boxSizing: "border-box" }}
@@ -33,7 +36,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         {/* Content section */}
         <div className="flex flex-col items-start p-0 gap-4 lg:gap-2 w-full max-w-[245px] flex-grow">
           {/* Icon */}
-          <div className="w-16 h-16 relative flex items-center justify-center">
+          <div className="w-16 h-16 relative flex items-start justify-start">
             <Image
               src={iconSrc}
               alt={`${title} icon`}
@@ -43,21 +46,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             />
           </div>
 
-          {/* Text content */}
-          <div className="flex flex-col items-start p-0 w-full max-w-[245px] flex-grow">
-            {/* Title */}
-            <div className="flex flex-row justify-start lg:justify-left items-center py-2 px-0 gap-2 w-full">
-              <h3 className="font-manrope font-bold text-2xl lg:text-[32px] leading-8 lg:leading-[40px] text-gray-900">
-                {title}
-              </h3>
-            </div>
+          {/* Title */}
+          <h3 className="font-manrope font-bold text-2xl lg:text-[32px] leading-8 lg:leading-[40px] text-gray-900">
+            {title}
+          </h3>
 
-            {/* Description */}
-            <div className="flex flex-row justify-start lg:justify-left items-start lg:items-center p-2 gap-2 w-full max-w-[245px] flex-grow">
-              <div className="font-nunito-sans text-black font-normal text-sm lg:text-base leading-5 lg:leading-6 flex items-start lg:items-center w-full max-w-[225px]">
-                {description}
-              </div>
-            </div>
+          {/* Description */}
+          <div className="font-nunito-sans text-black font-normal text-sm lg:text-base leading-5 lg:leading-6 w-full max-w-[245px]">
+            {description}
           </div>
         </div>
 
@@ -76,6 +72,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       </div>
     </div>
   );
+
+  if (href) {
+    return <Link href={href}>{cardContent}</Link>;
+  }
+
+  return cardContent;
 };
 
 export default FeatureCard;

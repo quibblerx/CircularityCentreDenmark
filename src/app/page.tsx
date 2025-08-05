@@ -49,6 +49,7 @@ export default function HomePage() {
                   description={
                     <>Browse our Research Library for accessible learnings.</>
                   }
+                  href="/research-library"
                 />
                 <FeatureCard
                   icon="act"
@@ -75,6 +76,7 @@ export default function HomePage() {
             description={
               <>Browse our Research Library for accessible learnings.</>
             }
+            href="/research-library"
           />
           <FeatureCard
             icon="act"
@@ -104,7 +106,7 @@ export default function HomePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-stretch">
-            <div className="bg-gray-100 rounded-lg flex items-center justify-center min-h-[500px]">
+            <div className="bg-gray-100 rounded-[32px] flex items-center justify-center min-h-[500px]">
               <span className="text-gray-400 text-lg">Image placeholder</span>
             </div>
             <div className="flex flex-col justify-center">
@@ -115,26 +117,24 @@ export default function HomePage() {
                 Description of CCD
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Founded to accelerate Denmark&apos;s transition to a circular
-                economy, we bring together businesses, researchers, and citizens
-                to create innovative solutions. Our platform provides the tools,
-                knowledge, and connections needed to transform linear processes
-                into circular ones.
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Through collaborative programs and cutting-edge research,
-                we&apos;re building a sustainable future where waste becomes
-                resource and innovation drives progress.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                We connect stakeholders across industries to share knowledge,
-                develop partnerships, and implement circular economy principles
-                that benefit both business and the environment.
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Join us in creating a more sustainable Denmark where circular
-                thinking becomes the foundation for economic growth and
-                environmental stewardship.
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
               </p>
               <div className="flex justify-end">
                 <button className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-hover transition-colors">

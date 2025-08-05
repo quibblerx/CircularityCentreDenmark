@@ -40,7 +40,13 @@ const Footer = () => {
                 <span className="font-medium">Phone:</span> Lorem Ipsum
               </div>
               <div>
-                <span className="font-medium">Email:</span> Lorem Ipsum
+                <span className="font-medium">Email:</span>{" "}
+                <a
+                  href="mailto:contact@circularitycentre.dk"
+                  className="hover:text-white/80 transition-colors"
+                >
+                  contact@circularitycentre.dk
+                </a>
               </div>
               <div>
                 <span className="font-medium">CVR:</span> Lorem Ipsum
@@ -85,8 +91,10 @@ const Footer = () => {
               <h4 className="text-sm font-medium">Follow us</h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/circularity-centre-denmark/posts/?feedView=all"
                   className="text-white hover:text-white/80 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
