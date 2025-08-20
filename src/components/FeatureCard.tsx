@@ -28,31 +28,31 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
   const cardContent = (
     <div
-      className="bg-white border border-gray-100 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8 gap-2 w-full max-w-[280px] md:max-w-[320px] lg:max-w-[344px] lg:w-[344px] h-auto lg:h-[314px] min-h-[240px] md:min-h-[280px] lg:min-h-[314px] rounded-[24px] md:rounded-[32px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] hover:shadow-xl transition-shadow duration-200 mx-auto"
+      className="bg-white border border-gray-100 flex flex-col justify-center items-center p-6 lg:p-8 gap-2 w-[320px] lg:w-[344px] h-[320px] lg:h-[350px] rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-200 mx-auto"
       style={{ boxSizing: "border-box" }}
     >
       {/* Main content wrapper */}
-      <div className="flex flex-col justify-between items-end p-0 gap-3 md:gap-4 lg:gap-2 w-full max-w-[200px] md:max-w-[240px] lg:max-w-[245px] h-full lg:h-[250px] flex-grow">
+      <div className="flex flex-col justify-between items-end p-0 gap-2 w-full max-w-[240px] h-full">
         {/* Content section */}
-        <div className="flex flex-col items-start p-0 gap-3 md:gap-4 lg:gap-2 w-full max-w-[200px] md:max-w-[240px] lg:max-w-[245px] flex-grow">
+        <div className="flex flex-col items-start p-0 gap-2 w-full max-w-[240px] flex-grow">
           {/* Icon */}
-          <div className="w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 relative flex items-start justify-start">
+          <div className="w-16 h-16 relative flex items-start justify-start">
             <Image
               src={iconSrc}
               alt={`${title} icon`}
               width={64}
               height={64}
-              className="w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16"
+              className="w-16 h-16 object-contain"
             />
           </div>
 
           {/* Title */}
-          <h3 className="font-manrope font-bold text-xl md:text-2xl lg:text-[32px] leading-6 md:leading-8 lg:leading-[40px] text-gray-900">
+          <h3 className="font-manrope font-bold text-2xl lg:text-3xl leading-tight text-gray-900">
             {title}
           </h3>
 
           {/* Description */}
-          <div className="font-nunito-sans text-black font-normal text-xs md:text-sm lg:text-base leading-4 md:leading-5 lg:leading-6 w-full max-w-[200px] md:max-w-[240px] lg:max-w-[245px]">
+          <div className="font-nunito-sans text-black font-normal text-sm lg:text-base leading-relaxed w-full max-w-[240px]">
             {description}
           </div>
         </div>
@@ -61,12 +61,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         <div className="flex justify-end w-full">
           <button
             onClick={onClick}
-            className="w-8 md:w-10 lg:w-[50px] h-8 md:h-10 lg:h-[50px] bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors duration-200 group"
+            className="w-12 lg:w-14 h-12 lg:h-14 bg-primary rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors duration-200 group"
             style={{
               filter: "drop-shadow(0px 60px 100px rgba(16, 45, 97, 0.08))",
             }}
           >
-            <ArrowRight className="w-3 md:w-4 lg:w-5 h-3 md:h-4 lg:h-5 text-white group-hover:translate-x-0.5 transition-transform duration-200" />
+            <ArrowRight className="w-5 lg:w-6 h-5 lg:h-6 text-white group-hover:translate-x-0.5 transition-transform duration-200" />
           </button>
         </div>
       </div>

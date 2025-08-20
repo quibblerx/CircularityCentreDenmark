@@ -5,17 +5,17 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Hero Section - Full viewport height */}
-      <section className="h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6 text-left leading-tight">
+      <section className="h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white">
+        <div className="max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-left leading-tight">
             Your gateway to circularity
             <br />
             <span className="text-primary">in Denmark</span>
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-4 sm:mb-6 lg:mb-8 max-w-2xl text-left">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-4 sm:mb-6 md:mb-7 lg:mb-8 max-w-full sm:max-w-md md:max-w-lg lg:max-w-2xl text-left">
             Find partners, insights, and action opportunities tailored to you.
           </p>
-          <button className="bg-primary text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full font-semibold hover:bg-primary-hover transition-colors text-sm sm:text-base">
+          <button className="bg-primary text-white px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 rounded-full font-semibold hover:bg-primary-hover transition-colors text-xs sm:text-sm md:text-base lg:text-lg">
             Join Circularity Centre Denmark
           </button>
         </div>
@@ -32,11 +32,11 @@ export default function HomePage() {
         </div>
 
         {/* Feature Cards - Overlapping the background split */}
-        <div className="relative z-10 py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
-          {/* Desktop Cards */}
-          <div className="hidden md:block">
+        <div className="relative z-10 py-8 sm:py-12 lg:py-16 xl:py-20 px-4 sm:px-6 lg:px-8">
+          {/* Desktop Cards - Large screens and above */}
+          <div className="hidden lg:block">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-row justify-center items-center gap-4 lg:gap-6 xl:gap-8">
+              <div className="flex flex-row justify-center items-center gap-4 xl:gap-6 2xl:gap-8">
                 <FeatureCard
                   icon="discover"
                   title="Discover"
@@ -59,9 +59,33 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Mobile Cards */}
-          <div className="md:hidden">
-            <div className="max-w-sm mx-auto space-y-4">
+          {/* Tablet Cards - Medium to Large screens */}
+          <div className="hidden sm:block lg:hidden">
+            <div className="max-w-xs mx-auto space-y-8">
+              <FeatureCard
+                icon="discover"
+                title="Discover"
+                description="Discover circular businesses to partner with."
+              />
+              <FeatureCard
+                icon="learn"
+                title="Learn"
+                description={
+                  <>Browse our Research Library for accessible learnings.</>
+                }
+                href="/research-library"
+              />
+              <FeatureCard
+                icon="act"
+                title="Act"
+                description="Join or create workshops and projects that accelerate circularity."
+              />
+            </div>
+          </div>
+
+          {/* Mobile Cards - Small screens */}
+          <div className="sm:hidden">
+            <div className="max-w-xs mx-auto flex flex-col gap-y-6">
               <FeatureCard
                 icon="discover"
                 title="Discover"
