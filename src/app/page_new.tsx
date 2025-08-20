@@ -4,8 +4,8 @@ import FeatureCard from "@/components/FeatureCard";
 export default function HomePage() {
   return (
     <div className="bg-white">
-      {/* Hero Section - Full viewport height */}
-      <section className="h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Hero Section - Clean and simple */}
+      <section className="min-h-[calc(60vh-4rem)] flex items-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6 text-left leading-tight">
             Your gateway to circularity
@@ -21,47 +21,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section with Split Background - Overlapping Cards Design */}
-      <div className="relative">
-        {/* Background Split */}
-        <div className="absolute inset-0 z-0">
-          {/* White top half */}
-          <div className="h-1/2 bg-white"></div>
-          {/* Green bottom half */}
-          <div className="h-1/2 bg-primary"></div>
-        </div>
-
-        {/* Feature Cards - Overlapping the background split */}
-        <div className="relative z-10 py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
-          {/* Desktop Cards */}
-          <div className="hidden md:block">
-            <div className="max-w-7xl mx-auto">
-              <div className="flex flex-row justify-center items-center gap-4 lg:gap-6 xl:gap-8">
-                <FeatureCard
-                  icon="discover"
-                  title="Discover"
-                  description="Discover circular businesses to partner with."
-                />
-                <FeatureCard
-                  icon="learn"
-                  title="Learn"
-                  description={
-                    <>Browse our Research Library for accessible learnings.</>
-                  }
-                  href="/research-library"
-                />
-                <FeatureCard
-                  icon="act"
-                  title="Act"
-                  description="Join or create workshops and projects that accelerate circularity."
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile Cards */}
-          <div className="md:hidden">
-            <div className="max-w-sm mx-auto space-y-4">
+      {/* Services Section - Clean green background */}
+      <section className="bg-primary py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+        {/* Desktop Cards */}
+        <div className="hidden md:block">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-row justify-center items-center gap-4 lg:gap-6 xl:gap-8">
               <FeatureCard
                 icon="discover"
                 title="Discover"
@@ -83,7 +48,31 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Mobile Cards */}
+        <div className="md:hidden">
+          <div className="max-w-sm mx-auto space-y-4">
+            <FeatureCard
+              icon="discover"
+              title="Discover"
+              description="Discover circular businesses to partner with."
+            />
+            <FeatureCard
+              icon="learn"
+              title="Learn"
+              description={
+                <>Browse our Research Library for accessible learnings.</>
+              }
+              href="/research-library"
+            />
+            <FeatureCard
+              icon="act"
+              title="Act"
+              description="Join or create workshops and projects that accelerate circularity."
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Circular Business Section */}
       <section className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
