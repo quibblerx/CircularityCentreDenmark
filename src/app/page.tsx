@@ -1,3 +1,4 @@
+import TypedEffect from "@/components/TypedEffect";
 import React from "react";
 import FeatureCard from "@/components/FeatureCard";
 
@@ -12,9 +13,7 @@ export default function HomePage() {
             <br />
             <span className="text-primary">in Denmark</span>
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-4 sm:mb-6 md:mb-7 lg:mb-8 max-w-full sm:max-w-md md:max-w-lg lg:max-w-2xl text-left">
-            Find partners, insights, and action opportunities tailored to you.
-          </p>
+          <TypedEffect />
           <button className="bg-primary text-white px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 rounded-full font-semibold hover:bg-primary-hover transition-colors text-xs sm:text-sm md:text-base lg:text-lg">
             Join Circularity Centre Denmark
           </button>
