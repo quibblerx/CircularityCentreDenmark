@@ -2,6 +2,7 @@ import TypedEffect from "@/components/TypedEffect";
 import React from "react";
 import FeatureCard from "@/components/FeatureCard";
 import Link from "next/link";
+import Partners from "@/components/Partners";
 
 export default function HomePage() {
   return (
@@ -133,6 +134,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="bg-white py-10">
+        <Partners />
+      </div>
     </div>
   );
 }
