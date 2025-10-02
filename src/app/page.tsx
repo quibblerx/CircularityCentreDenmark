@@ -20,22 +20,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section with Split Background - Overlapping Cards Design */}
-      <div className="relative">
-        {/* Background Split */}
-        <div className="absolute inset-0 z-0">
-          {/* White top half */}
-          <div className="h-1/2 bg-white"></div>
-          {/* Green bottom half */}
-          <div className="h-1/2 bg-primary"></div>
-        </div>
-
-        {/* Feature Cards - Overlapping the background split */}
-        <div className="relative z-10 py-8 sm:py-12 lg:py-16 xl:py-20 px-4 sm:px-6 lg:px-8">
-          {/* Desktop Cards - Large screens and above */}
-          <div className="hidden lg:block">
-            <div className="max-w-7xl mx-auto">
-              <div className="flex flex-row justify-center items-center gap-4 xl:gap-6 2xl:gap-8">
+      {/* Services Section with Overlapping Cards */}
+      <section className="bg-white pt-32 sm:pt-36 lg:pt-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative">
+            {/* Feature Cards - Positioned to overlap */}
+            <div className="absolute inset-x-0 -top-1/2 z-10">
+              {/* Desktop Cards */}
+              <div className="hidden lg:flex justify-center gap-6">
                 <FeatureCard
                   icon="discover"
                   title="Discover"
@@ -44,9 +36,26 @@ export default function HomePage() {
                 <FeatureCard
                   icon="learn"
                   title="Learn"
-                  description={
-                    <>Browse our Research Library for accessible learnings.</>
-                  }
+                  description="Browse our Research Library for accessible learnings."
+                  href="/research-library"
+                />
+                <FeatureCard
+                  icon="act"
+                  title="Act"
+                  description="Join or create workshops and projects that accelerate circularity."
+                />
+              </div>
+              {/* Tablet and Mobile Cards */}
+              <div className="lg:hidden flex flex-col items-center space-y-8">
+                <FeatureCard
+                  icon="discover"
+                  title="Discover"
+                  description="Discover circular businesses to partner with."
+                />
+                <FeatureCard
+                  icon="learn"
+                  title="Learn"
+                  description="Browse our Research Library for accessible learnings."
                   href="/research-library"
                 />
                 <FeatureCard
@@ -56,71 +65,22 @@ export default function HomePage() {
                 />
               </div>
             </div>
-          </div>
 
-          {/* Tablet Cards - Medium to Large screens */}
-          <div className="hidden sm:block lg:hidden">
-            <div className="max-w-xs mx-auto space-y-8">
-              <FeatureCard
-                icon="discover"
-                title="Discover"
-                description="Discover circular businesses to partner with."
-              />
-              <FeatureCard
-                icon="learn"
-                title="Learn"
-                description={
-                  <>Browse our Research Library for accessible learnings.</>
-                }
-                href="/research-library"
-              />
-              <FeatureCard
-                icon="act"
-                title="Act"
-                description="Join or create workshops and projects that accelerate circularity."
-              />
+            {/* Green Background Section */}
+            <div className="bg-primary rounded-3xl pt-40 pb-48 px-4 sm:px-6 lg:px-[120px] text-center">
+              <h2 className="text-6xl font-extralight text-white leading-[80px] mb-4">
+                Everything you need to create a
+                <br />
+                circular business{" "}
+                <span className="font-bold">in one place.</span>
+              </h2>
+              <p className="text-white text-4xl font-normal leading-10">
+                Connecting <span className="font-semibold">businesses</span>,{" "}
+                <span className="font-semibold">researchers</span> and{" "}
+                <span className="font-semibold">citizens</span> in Denmark.
+              </p>
             </div>
           </div>
-
-          {/* Mobile Cards - Small screens */}
-          <div className="sm:hidden">
-            <div className="max-w-xs mx-auto flex flex-col gap-y-6">
-              <FeatureCard
-                icon="discover"
-                title="Discover"
-                description="Discover circular businesses to partner with."
-              />
-              <FeatureCard
-                icon="learn"
-                title="Learn"
-                description={
-                  <>Browse our Research Library for accessible learnings.</>
-                }
-                href="/research-library"
-              />
-              <FeatureCard
-                icon="act"
-                title="Act"
-                description="Join or create workshops and projects that accelerate circularity."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Circular Business Section */}
-      <section className="bg-primary py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-normal text-white mb-4">
-            Everything you need to create a circular
-            <br />
-            business <span className="font-bold">in one place.</span>
-          </h2>
-          <p className="text-white/90 text-lg">
-            Connecting <span className="font-semibold">businesses</span>,{" "}
-            <span className="font-semibold">researchers</span> and{" "}
-            <span className="font-semibold">citizens</span> in Denmark.
-          </p>
         </div>
       </section>
 
