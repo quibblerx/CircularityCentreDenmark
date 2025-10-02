@@ -1,6 +1,7 @@
 import TypedEffect from "@/components/TypedEffect";
 import React from "react";
 import FeatureCard from "@/components/FeatureCard";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -99,29 +100,34 @@ export default function HomePage() {
                 Description of CCD
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum
+                Our mission is to connect people, ideas, and actions to drive
+                Denmark’s shift to a circular economy through a common hub. We
+                bring businesses, researchers, and citizens together through a
+                practical knowledge platform, hands-on events, and workshops
+                that make circularity accessible and actionable.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                We envision a Denmark where circular thinking is our first
+                choice, embedded in how we design, produce, consume, and
+                regenerate. A future where businesses, researchers, and citizens
+                work together to create systems that prioritise sustainability,
+                resilience, and shared responsibility.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                Among other things, we are developing a business search tool
+                that helps businesses and citizens easily find circular
+                businesses. We’re also working to make academic research on
+                circularity accessible to everyone. We do this by translating
+                insights into everyday actions and practical tools. All of this
+                will be shared on our website, which is currently in
+                development.
               </p>
               <div className="flex justify-end">
-                <button className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-hover transition-colors">
-                  About us
-                </button>
+                <Link href="/about">
+                  <button className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-hover transition-colors">
+                    About us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

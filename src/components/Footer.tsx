@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="md:col-span-4">
             <div className="flex items-center space-x-3 mb-4 md:mb-6">
               <Image
-                src="/logo.png"
+                src="/Logo_Circularity_Centre_Denmark_transparent.png"
                 alt="Circularity Centre Denmark"
                 width={32}
                 height={32}

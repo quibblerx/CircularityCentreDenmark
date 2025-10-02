@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/logo.png"
+              src="/Logo_Circularity_Centre_Denmark_transparent.png"
               alt="Circularity Centre Denmark"
               width={40}
               height={40}
