@@ -21,11 +21,11 @@ export default function HomePage() {
       </section>
 
       {/* Services Section with Overlapping Cards */}
-      <section className="bg-white pt-32 sm:pt-36 lg:pt-40">
+      <section className="bg-white pt-48 pb-16 sm:pt-64 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             {/* Feature Cards - Positioned to overlap */}
-            <div className="absolute inset-x-0 -top-1/2 z-10">
+            <div className="absolute inset-x-0 top-0 -translate-y-1/2 z-10">
               {/* Desktop Cards */}
               <div className="hidden lg:flex justify-center gap-6">
                 <FeatureCard
@@ -67,8 +67,8 @@ export default function HomePage() {
             </div>
 
             {/* Green Background Section */}
-            <div className="bg-primary rounded-3xl pt-40 pb-48 px-4 sm:px-6 lg:px-[120px] text-center">
-              <h2 className="text-6xl font-extralight text-white leading-[80px] mb-4">
+            <div className="bg-primary rounded-3xl pt-64 pb-32 px-4 sm:px-6 lg:px-[120px] text-center">
+              <h2 className="text-6xl font-extralight text-white leading-[80px] mb-8">
                 Everything you need to create a
                 <br />
                 circular business{" "}
