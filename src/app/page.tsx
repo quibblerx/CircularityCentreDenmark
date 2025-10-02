@@ -22,33 +22,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section with Overlapping Cards */}
-      <section className="bg-white pt-48 pb-16 sm:pt-64 sm:pb-24">
+      {/* Services Section */}
+      <section className="bg-white pt-16 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
+          {/* On smaller screens, cards are in flow */}
+          <div className="lg:hidden mb-12">
+            <div className="flex flex-col items-center space-y-8">
+              <FeatureCard
+                icon="discover"
+                title="Discover"
+                description="Discover circular businesses to partner with."
+              />
+              <FeatureCard
+                icon="learn"
+                title="Learn"
+                description="Browse our Research Library for accessible learnings."
+                href="/research-library"
+              />
+              <FeatureCard
+                icon="act"
+                title="Act"
+                description="Join or create workshops and projects that accelerate circularity."
+              />
+            </div>
+          </div>
+
+          {/* On larger screens, cards overlap the green section */}
+          <div className="relative hidden lg:block">
             {/* Feature Cards - Positioned to overlap */}
             <div className="absolute inset-x-0 top-0 -translate-y-1/2 z-10">
-              {/* Desktop Cards */}
-              <div className="hidden lg:flex justify-center gap-6">
-                <FeatureCard
-                  icon="discover"
-                  title="Discover"
-                  description="Discover circular businesses to partner with."
-                />
-                <FeatureCard
-                  icon="learn"
-                  title="Learn"
-                  description="Browse our Research Library for accessible learnings."
-                  href="/research-library"
-                />
-                <FeatureCard
-                  icon="act"
-                  title="Act"
-                  description="Join or create workshops and projects that accelerate circularity."
-                />
-              </div>
-              {/* Tablet and Mobile Cards */}
-              <div className="lg:hidden flex flex-col items-center space-y-8">
+              <div className="flex justify-center gap-6">
                 <FeatureCard
                   icon="discover"
                   title="Discover"
@@ -82,6 +85,19 @@ export default function HomePage() {
                 <span className="font-semibold">citizens</span> in Denmark.
               </p>
             </div>
+          </div>
+
+          {/* Green background for smaller screens, without card overlap */}
+          <div className="lg:hidden bg-primary rounded-3xl pt-16 pb-16 px-4 sm:px-6 text-center">
+            <h2 className="text-4xl font-extralight text-white leading-tight mb-6">
+              Everything you need to create a circular business{" "}
+              <span className="font-bold">in one place.</span>
+            </h2>
+            <p className="text-white text-2xl font-normal leading-snug">
+              Connecting <span className="font-semibold">businesses</span>,{" "}
+              <span className="font-semibold">researchers</span> and{" "}
+              <span className="font-semibold">citizens</span> in Denmark.
+            </p>
           </div>
         </div>
       </section>
