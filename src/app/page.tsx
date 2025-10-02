@@ -8,10 +8,10 @@ export default function HomePage() {
       {/* Hero Section - Full viewport height */}
       <section className="h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white">
         <div className="max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-left leading-tight">
+          <h1 className="font-manrope text-6xl font-medium leading-[80px] text-[#74AA88] mb-6 text-left">
             Your gateway to circularity
             <br />
-            <span className="text-primary">in Denmark</span>
+            in Denmark
           </h1>
           <TypedEffect />
           <button className="bg-primary text-white px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-4 rounded-full font-semibold hover:bg-primary-hover transition-colors text-xs sm:text-sm md:text-base lg:text-lg">

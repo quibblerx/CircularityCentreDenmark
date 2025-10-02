@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       borderRadius: {
-        '32': '32px',
+        32: "32px",
       },
       fontFamily: {
-        'manrope': ['var(--font-manrope)', 'sans-serif'],
-        'nunito-sans': ['var(--font-nunito-sans)', 'sans-serif'],
+        manrope: ["var(--font-manrope)", "sans-serif"],
+        "nunito-sans": ["var(--font-nunito-sans)", "sans-serif"],
       },
     },
   },
