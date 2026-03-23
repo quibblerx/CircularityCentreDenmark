@@ -41,10 +41,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             className="w-16 h-16 object-contain"
           />
         </div>
-        <h3 className="font-manrope font-bold text-2xl lg:text-3xl leading-tight text-gray-900 mb-2">
+        <h3 className="font-manrope font-bold text-2xl lg:text-3xl leading-tight text-black mb-2">
           {title}
         </h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-black">{description}</p>
       </div>
       <div className="flex justify-end items-end mt-4">
         <button

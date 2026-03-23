@@ -5,10 +5,10 @@ export default function ResearchLibraryPage() {
     <div className="min-h-screen bg-white">
       <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Research Library
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-black">
             Browse our Research Library for accessible learnings.
           </p>
         </div>

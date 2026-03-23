@@ -12,7 +12,7 @@ const TypedEffect = () => {
       wrapper="p"
       cursor={true}
       repeat={0}
-      className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-4 sm:mb-6 md:mb-7 lg:mb-8 text-left"
+      className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-black mb-4 sm:mb-6 md:mb-7 lg:mb-8 text-left"
     />
   );
 };

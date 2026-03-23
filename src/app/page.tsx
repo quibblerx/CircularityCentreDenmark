@@ -107,30 +107,28 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-stretch">
             <div className="bg-gray-100 rounded-[32px] flex items-center justify-center min-h-[500px]">
-              <span className="text-gray-400 text-lg">Image placeholder</span>
+              <span className="text-black text-lg">Image placeholder</span>
             </div>
             <div className="flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Our Story
-              </h2>
+              <h2 className="text-3xl font-bold text-black mb-2">Our Story</h2>
               <p className="text-primary font-medium mb-6">
                 Description of CCD
               </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-black leading-relaxed mb-4">
                 Our mission is to connect people, ideas, and actions to drive
                 Denmark’s shift to a circular economy through a common hub. We
                 bring businesses, researchers, and citizens together through a
                 practical knowledge platform, hands-on events, and workshops
                 that make circularity accessible and actionable.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-black leading-relaxed mb-4">
                 We envision a Denmark where circular thinking is our first
                 choice, embedded in how we design, produce, consume, and
                 regenerate. A future where businesses, researchers, and citizens
                 work together to create systems that prioritise sustainability,
                 resilience, and shared responsibility.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-black leading-relaxed mb-8">
                 Among other things, we are developing a business search tool
                 that helps businesses and citizens easily find circular
                 businesses. We’re also working to make academic research on

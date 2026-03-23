@@ -1,11 +1,18 @@
+import ContactDetails from "@/components/ContactDetails";
+import ContactForm from "@/components/ContactForm";
+
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h1>
-        <p className="text-xl text-gray-600">
-          Get in touch with the Circularity Centre Denmark team.
-        </p>
+    <div className="min-h-screen bg-white py-12 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <div className="lg:mt-8">
+            <ContactDetails />
+          </div>
+          <div className="flex justify-center">
+            <ContactForm />
+          </div>
+        </div>
       </div>
     </div>
   );

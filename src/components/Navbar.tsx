@@ -20,7 +20,7 @@ const Navbar = () => {
               height={40}
               className="w-10 h-10"
             />
-            <span className="text-xl font-semibold text-gray-900">
+            <span className="text-xl font-semibold text-black">
               Circularity Centre Denmark
             </span>
           </Link>
@@ -29,19 +29,19 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/about"
-              className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+              className="text-black hover:text-primary transition-colors duration-200 font-medium"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+              className="text-black hover:text-primary transition-colors duration-200 font-medium"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+              className="text-black hover:text-primary transition-colors duration-200 font-medium"
             >
               Contact
             </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary focus:outline-none focus:text-primary cursor-pointer"
+              className="text-black hover:text-primary focus:outline-none focus:text-primary cursor-pointer"
               aria-label="Toggle menu"
             >
               <svg
@@ -88,21 +88,21 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
               <Link
                 href="/about"
-                className="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md font-medium"
+                className="block px-3 py-2 text-black hover:text-primary hover:bg-gray-50 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md font-medium"
+                className="block px-3 py-2 text-black hover:text-primary hover:bg-gray-50 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/contact"
-                className="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md font-medium"
+                className="block px-3 py-2 text-black hover:text-primary hover:bg-gray-50 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
